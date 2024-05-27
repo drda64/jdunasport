@@ -13,10 +13,10 @@ app.config.from_object(Config)
 db.init_app(app)
 jwt = JWTManager(app)
 
-@app.route('/')
-def hello_world():  # put application's code here
-    return 'Hello World!'
-
+# zaregistrujeme blueprints
+app.add_url_rule('/create_event', view_func=CreateEventController.as_view('create_event'))
+app.add_url_rule('/register', view_func=RegisterController.as_view('register'))
+app.add_url_rule('/login', view_func=LoginController.as_view('login'))
 
 if __name__ == '__main__':
     app.run()
