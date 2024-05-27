@@ -16,7 +16,6 @@ class RegisterController(MethodView):
         except ValidationError as e:
             return jsonify(e.messages), 400
 
-        data = request.get_json()
         user = User(
             username=data['username'],
             email=data['email'],
