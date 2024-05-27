@@ -1143,7 +1143,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
     </schema>
     <schema id="325" parent="1" name="jdunasport">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-05-26.10:54:59</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-05-27.09:49:39</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="326" parent="1" name="mysql">
@@ -1411,7 +1411,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
     <column id="384" parent="340" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -1427,7 +1427,7 @@ test\\_%|schema||&apos;&apos;||UPDATE|G</Grants>
       <Position>3</Position>
     </column>
     <column id="387" parent="340" name="password">
-      <DasType>varchar(100)|0s</DasType>
+      <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
