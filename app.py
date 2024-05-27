@@ -19,4 +19,4 @@ app.add_url_rule('/register', view_func=RegisterController.as_view('register'))
 app.add_url_rule('/login', view_func=LoginController.as_view('login'))
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True, port=6555)
