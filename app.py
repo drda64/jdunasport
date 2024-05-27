@@ -8,7 +8,10 @@ from controllers.login_controller import LoginController
 
 app = Flask(__name__)
 
+# nakonfigurujeme z objektu Config
 app.config.from_object(Config)
+db.init_app(app)
+jwt = JWTManager(app)
 
 @app.route('/')
 def hello_world():  # put application's code here
