@@ -4,22 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="files">
-      <change afterPath="$PROJECT_DIR$/controllers/create_event_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/login_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controllers/register_controller.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/category.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/event.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/participant.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/sport.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas/login_schema.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/schemas/register_schema.py" afterDir="false" />
+    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="getting data again unnecessary">
+      <change afterPath="$PROJECT_DIR$/controllers/get_categories_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/get_event_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/get_events.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/join_event_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/sports_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/base_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/faccdbdf-58fe-453b-9f35-96717cc43cd8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/faccdbdf-58fe-453b-9f35-96717cc43cd8.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/create_event_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/create_event_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/register_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/register_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/event.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/participant.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/participant.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/sport.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/sport.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/schemas/register_schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/schemas/register_schema.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +98,7 @@
 }</component>
   <component name="RunManager">
     <configuration name="jdunasport" type="Python.FlaskServer">
-      <option name="additionalOptions" value="--port=8000" />
+      <option name="additionalOptions" value="--port=8009" />
       <option name="flaskDebug" value="true" />
       <module name="jdunasport" />
       <option name="target" value="$PROJECT_DIR$/app.py" />
@@ -129,7 +134,10 @@
       <option name="presentableId" value="Default" />
       <updated>1716659197428</updated>
       <workItem from="1716659200836" duration="9054000" />
-      <workItem from="1716799472502" duration="5469000" />
+      <workItem from="1716799472502" duration="11660000" />
+      <workItem from="1716910164317" duration="3835000" />
+      <workItem from="1716971631644" duration="18187000" />
+      <workItem from="1717061123714" duration="12340000" />
     </task>
     <task id="LOCAL-00001" summary="zakladni aplikace">
       <option name="closed" value="true" />
@@ -163,7 +171,151 @@
       <option name="project" value="LOCAL" />
       <updated>1716721421859</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init for db">
+      <option name="closed" value="true" />
+      <created>1716806845617</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806845617</updated>
+    </task>
+    <task id="LOCAL-00006" summary="import of libraries">
+      <option name="closed" value="true" />
+      <created>1716806858299</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806858299</updated>
+    </task>
+    <task id="LOCAL-00007" summary="db config and jwt config">
+      <option name="closed" value="true" />
+      <created>1716806871239</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806871239</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adding blueprints for create event, register and login">
+      <option name="closed" value="true" />
+      <created>1716806892704</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806892704</updated>
+    </task>
+    <task id="LOCAL-00009" summary="changing ports">
+      <option name="closed" value="true" />
+      <created>1716806899648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806899648</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add category db class">
+      <option name="closed" value="true" />
+      <created>1716806911602</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806911602</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add jwt secret key">
+      <option name="closed" value="true" />
+      <created>1716806944444</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806944444</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add create event controller">
+      <option name="closed" value="true" />
+      <created>1716806955529</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806955529</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add event db class">
+      <option name="closed" value="true" />
+      <created>1716806962618</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806962618</updated>
+    </task>
+    <task id="LOCAL-00014" summary="xml">
+      <option name="closed" value="true" />
+      <created>1716806989013</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716806989013</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add login controller">
+      <option name="closed" value="true" />
+      <created>1716807001189</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807001189</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add login schema for validation">
+      <option name="closed" value="true" />
+      <created>1716807007638</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807007638</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add participant db model">
+      <option name="closed" value="true" />
+      <created>1716807014488</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807014488</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add register controller">
+      <option name="closed" value="true" />
+      <created>1716807024691</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807024691</updated>
+    </task>
+    <task id="LOCAL-00019" summary="add schema for validating registration">
+      <option name="closed" value="true" />
+      <created>1716807035113</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807035113</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add db model for sport">
+      <option name="closed" value="true" />
+      <created>1716807043552</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807043552</updated>
+    </task>
+    <task id="LOCAL-00021" summary="add db model for user">
+      <option name="closed" value="true" />
+      <created>1716807052530</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807052530</updated>
+    </task>
+    <task id="LOCAL-00022" summary="getting data again unnecessary">
+      <option name="closed" value="true" />
+      <created>1716807137716</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716807137716</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,11 +326,29 @@
     <MESSAGE value="vytvoreni config objektu" />
     <MESSAGE value="vytvoreni xml" />
     <MESSAGE value="files" />
-    <option name="LAST_COMMIT_MESSAGE" value="files" />
+    <MESSAGE value="init for db" />
+    <MESSAGE value="import of libraries" />
+    <MESSAGE value="db config and jwt config" />
+    <MESSAGE value="adding blueprints for create event, register and login" />
+    <MESSAGE value="changing ports" />
+    <MESSAGE value="add category db class" />
+    <MESSAGE value="add jwt secret key" />
+    <MESSAGE value="add create event controller" />
+    <MESSAGE value="add event db class" />
+    <MESSAGE value="xml" />
+    <MESSAGE value="add login controller" />
+    <MESSAGE value="add login schema for validation" />
+    <MESSAGE value="add participant db model" />
+    <MESSAGE value="add register controller" />
+    <MESSAGE value="add schema for validating registration" />
+    <MESSAGE value="add db model for sport" />
+    <MESSAGE value="add db model for user" />
+    <MESSAGE value="getting data again unnecessary" />
+    <option name="LAST_COMMIT_MESSAGE" value="getting data again unnecessary" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jdunasport$config.coverage" NAME="config Coverage Results" MODIFIED="1716663087172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/jdunasport$jdunasport.coverage" NAME="jdunasport Coverage Results" MODIFIED="1716805844603" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/jdunasport$jdunasport.coverage" NAME="jdunasport Coverage Results" MODIFIED="1717069612915" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/jdunasport$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1716802964715" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
