@@ -1,7 +1,9 @@
 from . import db
 from datetime import datetime
+from .base_model import BaseModel
 
-class User(db.Model):
+
+class User(BaseModel):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     username = db.Column(db.String(50), nullable=False, unique=True)
