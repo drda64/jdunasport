@@ -1,7 +1,8 @@
 from . import db
 from datetime import datetime
+from .base_model import BaseModel
 
-class Participant(db.Model):
+class Participant(BaseModel):
     __tablename__ = 'participants'
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     event_id = db.Column(db.Integer, db.ForeignKey('events.id'), nullable=False)
@@ -12,3 +13,11 @@ class Participant(db.Model):
     event = db.relationship('Event', backref=db.backref('participants', lazy=True))
     user = db.relationship('User', backref=db.backref('participants', lazy=True))
     category = db.relationship('Category', backref=db.backref('participants', lazy=True))
+
+    def to_dict(self):
+        # username
+        username = self.user.username
+        return {
+            'id': self.id,
+            'username': username
+        }
