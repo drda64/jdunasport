@@ -9,10 +9,7 @@ class RegisterSchema(Schema):
 
     @validates('username')
     def validate_username(self, value):
-        #zkontrolujeme, zda jiz neni v databazi
-        user = User.query.filter_by(username=value).first()
-
-        if user:
+        if User.checkIfAlreadyExists(username=value):
             raise ValidationError("User already exists")
 
     @validates('password')
@@ -22,7 +19,5 @@ class RegisterSchema(Schema):
 
     @validates('email')
     def validate_email(self, value):
-        user = User.query.filter_by(email=value).first()
-
-        if user:
+        if User.checkIfAlreadyExists(email=value):
             raise ValidationError("Email already exists")
