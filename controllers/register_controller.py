@@ -22,8 +22,8 @@ class RegisterController(MethodView):
             password=generate_password_hash(data['password'])
         )
 
-        db.session.add(user)
-        db.session.commit()
+        user.save()
+
         return jsonify({
             'message': 'User created successfully'
         })
