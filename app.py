@@ -1,10 +1,15 @@
-from flask import Flask
+from flask import Flask, jsonify
 from config import Config
+from controllers.get_event_controller import GetEventController
+from controllers.get_events import GetEventsController
+from controllers.join_event_controller import JoinEventController
+from controllers.sports_controller import SportsController
 from models import db
-from flask_jwt_extended import JWTManager
+from flask_jwt_extended import JWTManager, create_access_token, get_jwt_identity, jwt_required
 from controllers.create_event_controller import CreateEventController
 from controllers.register_controller import RegisterController
 from controllers.login_controller import LoginController
+from controllers.get_categories_controller import GetCategoriesController
 
 app = Flask(__name__)
 
