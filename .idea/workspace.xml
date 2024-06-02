@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="new way of hashing passwords">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/password_hasher.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/password_hasher.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/register_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/register_controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,15 +125,7 @@
       <workItem from="1717157393581" duration="203000" />
       <workItem from="1717157624359" duration="22068000" />
       <workItem from="1717260775287" duration="20270000" />
-      <workItem from="1717345139116" duration="27000" />
-    </task>
-    <task id="LOCAL-00010" summary="add category db class">
-      <option name="closed" value="true" />
-      <created>1716806911602</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1716806911602</updated>
+      <workItem from="1717345139116" duration="228000" />
     </task>
     <task id="LOCAL-00011" summary="add jwt secret key">
       <option name="closed" value="true" />
@@ -518,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717342657751</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="new way of hashing passwords">
+      <option name="closed" value="true" />
+      <created>1717345171091</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1717345171091</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
