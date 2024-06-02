@@ -16,7 +16,7 @@ from controllers.is_participant_controller import IsParticipantController
 from flask_cors import CORS
 
 app = Flask(__name__)
-CORS(app, origins=['https://drda64.github.io'])
+CORS(app, resources={r"/*": {"origins": "https://drda64.github.io"}})
 
 # nakonfigurujeme z objektu Config
 app.config.from_object(Config)

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="no salting just for study purposes">
+    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="adding cors policy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
@@ -124,15 +124,7 @@
       <workItem from="1717157393581" duration="203000" />
       <workItem from="1717157624359" duration="22068000" />
       <workItem from="1717260775287" duration="20270000" />
-      <workItem from="1717345139116" duration="1768000" />
-    </task>
-    <task id="LOCAL-00014" summary="xml">
-      <option name="closed" value="true" />
-      <created>1716806989013</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1716806989013</updated>
+      <workItem from="1717345139116" duration="1986000" />
     </task>
     <task id="LOCAL-00015" summary="add login controller">
       <option name="closed" value="true" />
@@ -518,14 +510,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717346358322</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="adding cors policy">
+      <option name="closed" value="true" />
+      <created>1717346919168</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1717346919168</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="controller that returns event by id" />
     <MESSAGE value="controller that returns all events" />
     <MESSAGE value="new to dict func" />
     <MESSAGE value="changing saving based on base model" />
@@ -550,7 +549,8 @@
     <MESSAGE value="back to old way of hashing password" />
     <MESSAGE value="and back to new way" />
     <MESSAGE value="no salting just for study purposes" />
-    <option name="LAST_COMMIT_MESSAGE" value="no salting just for study purposes" />
+    <MESSAGE value="adding cors policy" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding cors policy" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jdunasport$config.coverage" NAME="config Coverage Results" MODIFIED="1716663087172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
