@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from flask.views import MethodView
 
 from flask import request, jsonify
@@ -15,8 +17,12 @@ class JoinEventController(MethodView):
         user_id = get_jwt_identity()
         category_id = request.json.get('category_id')
 
-        print(user_id)
-        print(category_id)
+        # Check if the event is older than today's 00:00
+        today_start = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
+
+        event = Event.query.get(event_id)
+        if event.event_time < today_start:
+            return jsonify({'message': 'Cannot join event that has already happened'}), 400
 
         # check if the user is already a participant
         participant = Participant.query.filter_by(event_id=event_id, user_id=user_id).first()
@@ -34,13 +40,15 @@ class JoinEventController(MethodView):
         if not category:
             return jsonify({'message': 'Category not found'}), 404
 
-        # check if the category is full
-        participants = Participant.query.filter_by(category_id=category_id).all()
-        if len(participants) >= category.capacity:
-            return jsonify({'message': 'Category is full'}), 400
+        substitute = 0
+
+        # check if the category is full of not substitutes
+        participants = Participant.query.filter_by(category_id=category_id, substitute=0).all()
+        if len(participants) == category.capacity:
+            substitute = 1
 
         # else add the participant
-        participant = Participant(event_id=event_id, user_id=user_id, category_id=category_id)
+        participant = Participant(event_id=event_id, user_id=user_id, category_id=category_id, substitute=substitute)
         participant.save()
 
         return jsonify({'message': 'Participant added'}), 200
