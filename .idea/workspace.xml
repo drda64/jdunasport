@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="xml">
-      <change afterPath="$PROJECT_DIR$/services/password_hasher.py" afterDir="false" />
+    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="new way of hashing passwords">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/login_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/register_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/register_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/password_hasher.py" beforeDir="false" afterPath="$PROJECT_DIR$/services/password_hasher.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +123,8 @@
       <workItem from="1717061123714" duration="19845000" />
       <workItem from="1717157393581" duration="203000" />
       <workItem from="1717157624359" duration="22068000" />
-      <workItem from="1717260775287" duration="19161000" />
-    </task>
-    <task id="LOCAL-00009" summary="changing ports">
-      <option name="closed" value="true" />
-      <created>1716806899648</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1716806899648</updated>
+      <workItem from="1717260775287" duration="20270000" />
+      <workItem from="1717345139116" duration="27000" />
     </task>
     <task id="LOCAL-00010" summary="add category db class">
       <option name="closed" value="true" />
@@ -519,14 +510,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717340234431</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="new way of hashing passwords">
+      <option name="closed" value="true" />
+      <created>1717342657751</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1717342657751</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="jwt token based login" />
     <MESSAGE value="chaning config" />
     <MESSAGE value="add create event controller for creating event" />
     <MESSAGE value="controller that returns categories" />
@@ -551,7 +549,8 @@
     <MESSAGE value="updating to dict" />
     <MESSAGE value="updating response" />
     <MESSAGE value="xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="xml" />
+    <MESSAGE value="new way of hashing passwords" />
+    <option name="LAST_COMMIT_MESSAGE" value="new way of hashing passwords" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jdunasport$config.coverage" NAME="config Coverage Results" MODIFIED="1716663087172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
