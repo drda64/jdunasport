@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="adding cors policy">
+    <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="cors update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/login_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login_controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,15 +124,7 @@
       <workItem from="1717157393581" duration="203000" />
       <workItem from="1717157624359" duration="22068000" />
       <workItem from="1717260775287" duration="20270000" />
-      <workItem from="1717345139116" duration="2109000" />
-    </task>
-    <task id="LOCAL-00016" summary="add login schema for validation">
-      <option name="closed" value="true" />
-      <created>1716807007638</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1716807007638</updated>
+      <workItem from="1717345139116" duration="2213000" />
     </task>
     <task id="LOCAL-00017" summary="add participant db model">
       <option name="closed" value="true" />
@@ -519,14 +510,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717347130305</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="cors update">
+      <option name="closed" value="true" />
+      <created>1717347257219</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1717347257219</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="controller that returns all events" />
     <MESSAGE value="new to dict func" />
     <MESSAGE value="changing saving based on base model" />
     <MESSAGE value="new validation funcs for registration" />
@@ -551,7 +549,8 @@
     <MESSAGE value="and back to new way" />
     <MESSAGE value="no salting just for study purposes" />
     <MESSAGE value="adding cors policy" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding cors policy" />
+    <MESSAGE value="cors update" />
+    <option name="LAST_COMMIT_MESSAGE" value="cors update" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jdunasport$config.coverage" NAME="config Coverage Results" MODIFIED="1716663087172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
