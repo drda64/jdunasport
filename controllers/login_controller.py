@@ -23,7 +23,7 @@ class LoginController(MethodView):
 
         user = User.getFirst(username=username)
 
-        if user and check_password_hash(user.password, password):
+        if user and check_password(user.password, password):
             access_token = create_access_token(identity=user.id)
             refresh_token = create_refresh_token(identity=user.id)
             return jsonify({'message': 'Přihlášení bylo úspěšné!', 'access_token': access_token})

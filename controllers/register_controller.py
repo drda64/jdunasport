@@ -21,7 +21,7 @@ class RegisterController(MethodView):
         user = User(
             username=data['username'],
             email=data['email'],
-            password=generate_password_hash(data['password'])
+            password=hash_password(data['password'])
         )
 
         user.save()
