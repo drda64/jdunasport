@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e2af5b45-761b-4232-8c38-1079b12a3474" name="Changes" comment="adding cors policy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/login_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/login_controller.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,15 +125,7 @@
       <workItem from="1717157393581" duration="203000" />
       <workItem from="1717157624359" duration="22068000" />
       <workItem from="1717260775287" duration="20270000" />
-      <workItem from="1717345139116" duration="1986000" />
-    </task>
-    <task id="LOCAL-00015" summary="add login controller">
-      <option name="closed" value="true" />
-      <created>1716807001189</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1716807001189</updated>
+      <workItem from="1717345139116" duration="2109000" />
     </task>
     <task id="LOCAL-00016" summary="add login schema for validation">
       <option name="closed" value="true" />
@@ -518,7 +511,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717346919168</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="adding cors policy">
+      <option name="closed" value="true" />
+      <created>1717347130305</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1717347130305</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

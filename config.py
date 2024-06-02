@@ -9,3 +9,4 @@ class Config:
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     JWT_SECRET_KEY = "letsgoooo"
     JWT_ACCESS_TOKEN_EXPIRES = timedelta(hours=24)
+    CORS_HEADERS = 'Content-Type'

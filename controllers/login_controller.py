@@ -7,9 +7,11 @@ from flask_jwt_extended import create_access_token, create_refresh_token
 from schemas.login_schema import LoginSchema
 from marshmallow.exceptions import ValidationError
 from services.password_hasher import check_password
+from flask_cors import cross_origin
 
 
 class LoginController(MethodView):
+    @cross_origin()
     def post(self):
         schema = LoginSchema()
 
