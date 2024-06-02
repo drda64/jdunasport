@@ -8,7 +8,7 @@ class Participant(BaseModel):
     event_id = db.Column(db.Integer, db.ForeignKey('events.id'), nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.id'), nullable=False)
     category_id = db.Column(db.Integer, db.ForeignKey('categories.id'), nullable=False)
-    status = db.Column(db.String(20), nullable=False, default='pending')
+    substitute = db.Column(db.Boolean, nullable=False, default=False)
     created_at = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     event = db.relationship('Event', backref=db.backref('participants', lazy=True))
     user = db.relationship('User', backref=db.backref('participants', lazy=True))
@@ -17,7 +17,10 @@ class Participant(BaseModel):
     def to_dict(self):
         # username
         username = self.user.username
+        print(self.substitute)
         return {
             'id': self.id,
-            'username': username
+            'username': username,
+            'substitute': self.substitute,
+            'created_at': self.created_at
         }
