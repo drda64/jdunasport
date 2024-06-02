@@ -5,6 +5,7 @@ from schemas.register_schema import RegisterSchema
 from werkzeug.security import generate_password_hash
 from models import db
 from marshmallow.exceptions import ValidationError
+from flask_jwt_extended import create_access_token
 
 
 class RegisterController(MethodView):
@@ -23,7 +24,9 @@ class RegisterController(MethodView):
         )
 
         user.save()
+        access_token = create_access_token(identity=user.id)
 
         return jsonify({
-            'message': 'User created successfully'
+            'message': 'User created successfully',
+            'access_token': access_token,
         })
