@@ -6,6 +6,7 @@ from werkzeug.security import generate_password_hash
 from models import db
 from marshmallow.exceptions import ValidationError
 from flask_jwt_extended import create_access_token
+from services.password_hasher import hash_password
 
 
 class RegisterController(MethodView):
@@ -20,7 +21,7 @@ class RegisterController(MethodView):
         user = User(
             username=data['username'],
             email=data['email'],
-            password=generate_password_hash(data['password'])
+            password=hash_password(data['password'])
         )
 
         user.save()
