@@ -1,3 +1,6 @@
+import random
+import string
+
 from models import db
 
 
@@ -28,5 +31,18 @@ class BaseModel(db.Model):
         return cls.query.filter_by(**kwargs).all()
 
     @classmethod
+    def delete(cls, **kwargs):
+        cls.query.filter_by(**kwargs).delete()
+        db.session.commit()
+
+    @classmethod
     def serialize(cls, data):
         return [item.to_dict() for item in data]
+
+    @classmethod
+    def generate_unique_code(cls):
+        while True:
+            code = ''.join(random.choices(string.ascii_letters + string.digits, k=6))
+            if not cls.query.get(code):
+                return code
+
