@@ -11,7 +11,6 @@ from flask_cors import cross_origin
 
 
 class LoginController(MethodView):
-    @cross_origin()
     def post(self):
         schema = LoginSchema()
 
