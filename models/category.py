@@ -24,3 +24,25 @@ class Category(BaseModel):
             'participants': Participant.serialize(participants),
             'created_at': self.created_at
         }
+
+    def is_full(self, event_id, category_id):
+        # we query the participants, that are not substitutes
+        participants = Participant.query.filter_by(event_id=event_id, category_id=category_id, substitute=0).all()
+
+        if len(participants) >= self.capacity:
+            return True
+
+        return False
+
+    def update_subs(self):
+        # we query the participants, that are not substitutes
+        participants = Participant.query.filter_by(category_id=self.id, substitute=0).all()
+
+        if len(participants) >= self.capacity:
+            # we query the participants, that are substitutes and order them by the time they joined the event
+            participants = Participant.query.filter_by(category_id=self.id, substitute=1).order_by(Participant.created_at).all()
+
+            # we update the as many participants as the capacity of the category
+            for participant in participants:
+                participant.substitute = 0
+                participant.save()
